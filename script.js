@@ -42,7 +42,7 @@ const wortliste = {
 
     "Enkel": "-",
 
-    "Enlelin": "Enklinnen",
+    "Enkelin": "Enkelinnen",
 
     "Familienname": "Familiennamen",
 
