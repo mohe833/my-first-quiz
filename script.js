@@ -1,3 +1,5 @@
+alert("Wenn der Plural und Singular gleich sind, nimm bitte -")
+alert("Welcome! Mein Name ist Mohammed")
 let user = "";
 
 let score = 0;
@@ -5,7 +7,7 @@ let score = 0;
 let currentIndex = 0;
 
 const wortliste = {
-
+ 
     "Bruder": "Brüder",
 
     "Eltern": "-",
