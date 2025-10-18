@@ -8,53 +8,53 @@ let currentIndex = 0;
 
 const wortliste = {
  
-    "Bruder": "Brüder",
+    "der Bruder": "Brüder",
 
-    "Eltern": "-",
+    "die Eltern": "-",
 
-    "Familie": "Familien",
+    "die Familie": "Familien",
 
-    "Fest": "Feste",
+    "das Fest": "Feste",
 
-    "Geschwister": "-",
+    "die Geschwister": "-",
 
-    "Grossvater": "Grossväter",
+    "der Grossvater": "Grossväter",
 
-    "Mutter": "Mütter",
+    "die Mutter": "Mütter",
 
-    "Onkel": "-",
+    "der Onkel": "-",
 
-    "Schwester": "Schwestern",
+    "die Schwester": "Schwestern",
 
-    "Sohn": "Söhne",
+    "der Sohn": "Söhne",
 
-    "Tante": "Tanten",
+    "die Tante": "Tanten",
 
-    "Tochter": "Töchter",
+    "die Tochter": "Töchter",
 
-    "Vater": "Väter",
+    "der Vater": "Väter",
 
-    "Vorname": "Vornamen",
+    "der Vorname": "Vornamen",
 
-    "Besuch": "Besuche",
+    "der Besuch": "Besuche",
 
-    "Cousin": "Cousins",
+    "der Cousin": "Cousins",
 
-    "Cousine": "Cousinen",
+    "die Cousine": "Cousinen",
 
-    "Enkel": "-",
+    "der Enkel": "-",
 
-    "Enkelin": "Enkelinnen",
+    "die Enkelin": "Enkelinnen",
 
-    "Familienname": "Familiennamen",
+    "der Familienname": "Familiennamen",
 
-    "Geschenk": "Geschenke",
+    "das Geschenk": "Geschenke",
 
-    "Party": "Partys",
+    "die Party": "Partys",
 
-    "Nichte": "Nichten",
+    "die Nichte": "Nichten",
 
-    "Neffe": "Neffen"
+    "der Neffe": "Neffen"
 
 };
 
