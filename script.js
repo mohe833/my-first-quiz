@@ -7,53 +7,59 @@ let currentIndex = 0;
 
 const wortliste = {
  
-    "der Bruder": "Brüder",
+    "die Ente": "Enten",
+    "der Esel": "-",
+    "das Fell": "Felle",
+    "der Fisch": "Fische",
+    "der Frosch": "Frösche",
+    "das Futter": "-",
+    "der Hahn": "Häne",
+    "der Hase": "Hasen",
+    "das Haustier": "Haustiere",
+    "das Huhn": "Hüner",
+    "der Hund": "Hunde",
+    "das Kamel": "Kamele",
+    "die Katze": "Katzen",
+    "die Kuh": "Kühe",
+    "der Löwe": "Löwen",
+    "die Maus": "Mäuse",
+    "der Pferd": "Pferde",
+    "das Schaf": "Schafe",
+    "die Schlange": "Schlangen",
+    "der Schwanz": "Schwänze",
+    "das Schwein": "Schweine",
+    "der Stall": "Ställe",
+    "das Tier": "Tiere",
+    "der Vogel": "Vögel",
+    "der Affe": "Affen",
+    "die Ameise": "Ameisen",
+    "das Aquarium": "Aquarien",
+    "der Bär": "Bären",
+    "die Biene": "Bienen",
+    "Elefant": "Elefanten",
+    "die Feder": "Federn",
+    "die Fliege": "Fliegen",
+    "der Flügel": "-",
+    "der Fuchs": "Füchse",
+    "das Horn": "Hörner",
+    "der Käfer": "-",
+    "der Käfig": "Käfige",
+    "der Igel": "-",
+    "das Känguru": "Kängurus",
+    "das Krokodil": "Krokodile",
+    "die Mücke": "Mücken",
+    "die Muschel": "Muscheln",
+    "die Pfote": "Pfoten",
+    "das Reh": "Rehe",
+    "der Schnabel": "Schnäbel",
+    "die Schnecke": "Schnecken",
+    "die Wespe": "Wespen",
+    "der Wolf": "Wölfe",
+    "der Wurm": "Würmer",
+    "das Zebra": "Zebras",
+    "die Ziege": "Ziegen",
+    "der Zoo": "Zoos"
 
-    "die Eltern": "-",
-
-    "die Familie": "Familien",
-
-    "das Fest": "Feste",
-
-    "die Geschwister": "-",
-
-    "der Grossvater": "Grossväter",
-
-    "die Mutter": "Mütter",
-
-    "der Onkel": "-",
-
-    "die Schwester": "Schwestern",
-
-    "der Sohn": "Söhne",
-
-    "die Tante": "Tanten",
-
-    "die Tochter": "Töchter",
-
-    "der Vater": "Väter",
-
-    "der Vorname": "Vornamen",
-
-    "der Besuch": "Besuche",
-
-    "der Cousin": "Cousins",
-
-    "die Cousine": "Cousinen",
-
-    "der Enkel": "-",
-
-    "die Enkelin": "Enkelinnen",
-
-    "der Familienname": "Familiennamen",
-
-    "das Geschenk": "Geschenke",
-
-    "die Party": "Partys",
-
-    "die Nichte": "Nichten",
-
-    "der Neffe": "Neffen"
 
 };
 
@@ -109,7 +115,7 @@ function checkAnswer() {
 
     const userAnswer = document.getElementById("answer").value.trim();
 
-    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+    if (userAnswer === correctAnswer) {
 
         score++;
 
@@ -129,7 +135,7 @@ function checkAnswer() {
 
     currentIndex++;
 
-    setTimeout(showQuestion, 1500); // waits 1.5 seconds before next question
+    setTimeout(showQuestion, 3000); // waits 5000 seconds before next question
 
 }
 
