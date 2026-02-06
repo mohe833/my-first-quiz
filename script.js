@@ -58,6 +58,7 @@ const wortliste = {
     "der Wurm": "Würmer",
     "das Zebra": "Zebras",
     "die Ziege": "Ziegen",
+    "der Zoo": "Zoos"
     
 
 
@@ -135,7 +136,7 @@ function checkAnswer() {
 
     currentIndex++;
 
-    setTimeout(showQuestion, 3000); // waits 5000 seconds before next question
+    setTimeout(showQuestion, 3000); // waits 3 seconds before next question
 
 }
 
