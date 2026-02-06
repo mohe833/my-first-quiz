@@ -59,6 +59,10 @@ const wortliste = {
     "das Zebra": "Zebras",
     "die Ziege": "Ziegen",
     "der Zoo": "Zoos"
+<<<<<<< HEAD
+=======
+    
+>>>>>>> master
 
 
 };
@@ -135,7 +139,11 @@ function checkAnswer() {
 
     currentIndex++;
 
+<<<<<<< HEAD
     setTimeout(showQuestion, 3000); // waits 5000 seconds before next question
+=======
+    setTimeout(showQuestion, 3000); // waits 3 seconds before next question
+>>>>>>> master
 
 }
 
