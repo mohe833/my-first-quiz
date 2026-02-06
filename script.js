@@ -57,8 +57,8 @@ const wortliste = {
     "der Wolf": "Wölfe",
     "der Wurm": "Würmer",
     "das Zebra": "Zebras",
-    "die Ziege": "Ziegen",
-    "der Zoo": "Zoos"
+    
+    
     
 
 
