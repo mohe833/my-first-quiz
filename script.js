@@ -59,10 +59,7 @@ const wortliste = {
     "das Zebra": "Zebras",
     "die Ziege": "Ziegen",
     "der Zoo": "Zoos"
-<<<<<<< HEAD
-=======
     
->>>>>>> master
 
 
 };
