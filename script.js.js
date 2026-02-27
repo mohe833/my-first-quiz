@@ -124,4 +124,10 @@ function endQuiz() {
     `;
 
 }
+document.addEventListener("keydown", function(event) {
+ if (event.key === "Enter") {
+   document.getElementById("confirm-btn").click();
+ }
+});
+
  
