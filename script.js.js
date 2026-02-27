@@ -13,7 +13,6 @@ const wortliste = {
     "das Fieber": "-",
     "die Grippe": "Grippen",
     "der Husten": "-",
-    "das Kopfweh": "-",
     "die Krankheit": "Krankheiten",
     "das Haustier": "Haustiere",
     "das Medikament": "Medikamente",
