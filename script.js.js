@@ -7,7 +7,7 @@ let currentIndex = 0;
 
 const wortliste = {
  
-    "die Apotheke": "Apotheken",
+    "die Apotheke": "die Apotheken",
     "der Arzt": "Ärzte",
     "das Blut": "-",
     "das Fieber": "-",
