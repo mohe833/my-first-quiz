@@ -7,7 +7,7 @@ let currentIndex = 0;
 
 const wortliste = {
  
-     "das At-Zeichen": "At-Zeichen",
+    "das At-Zeichen": "At-Zeichen",
     "der Laptop": "Laptops",
     "der Bildschirm / der Monitor": "Bildschirme / Monitore",
     "die Tastatur": "Tastaturen",
