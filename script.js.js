@@ -9,117 +9,117 @@ const wortliste = [
 {
     word: "At-Zeichen",
     plural: "At-Zeichen",
-    image: "images/at_zeichen.jpg",
+    image: "Images/at_zeichen.jpg",
     category: "ICT"
   },
   {
     word: "der Laptop",
     plural: "Laptops",
     
-    image: "images/laptop.jpg",
+    image: "Images/laptop.jpg",
     category: "ICT"
   },
   {
     word: "der Bildschirm / der Monitor",
     plural: "Bildschirme / Monitore",
-    image: "images/bildschirm_monitor.jpg",
+    image: "Images/bildschirm_monitor.jpg",
     category: "ICT"
   },
   {
     word: "die Tastatur",
     plural: "Tastaturen",
-    image: "images/tastatur.jpg",
+    image: "Images/tastatur.jpg",
     category: "ICT"
   },
   {
     word: "der Akku ist leer",
     plural: "-",
-    image: "images/akku_leer.jpg",
+    image: "Images/akku_leer.jpg",
     category: "ICT"
   },
   {
     word: "der Computer (PC)",
     plural: "Computer",
-    image: "images/computer.jpg",
+    image: "Images/computer.jpg",
     category: "ICT"
   },
   {
     word: "teams",
     plural: "-",
-    image: "images/teams.jpg",
+    image: "Images/teams.jpg",
     category: "ICT"
   },
   {
     word: "der Akku ist voll",
     plural: "-",
-    image: "images/akku_voll.jpg",
+    image: "Images/akku_voll.jpg",
     category: "ICT"
   },
   {
     word: "aufladen",
     plural: "-",
-    image: "images/aufladen.jpg",
+    image: "Images/aufladen.jpg",
     category: "ICT"
   },
   {
     word: "das Word",
     plural: "-",
-    image: "images/word.jpg",
+    image: "Images/word.jpg",
     category: "ICT"
   },
   {
     word: "das Internet / das Symbol",
     plural: "Symbole",
-    image: "images/internet_symbol.jpg",
+    image: "Images/internet_symbol.jpg",
     category: "ICT"
   },
   {
     word: "die Maus",
     plural: "Mäuse",
-    image: "images/maus.jpg",
+    image: "Images/maus.jpg",
     category: "ICT"
   },
   {
     word: "die linke Maustaste",
     plural: "linken Maustasten",
-    image: "images/linke_maustaste.jpg",
+    image: "Images/linke_maustaste.jpg",
     category: "ICT"
   },
   {
     word: "die rechte Maustaste",
     plural: "rechten Maustasten",
-    image: "images/rechte_maustaste.jpg",
+    image: "Images/rechte_maustaste.jpg",
     category: "ICT"
   },
   
   {
     word: "der USB-Stick",
     plural: "USB-Sticks",
-    image: "images/usb_stick.jpg",
+    image: "Images/usb_stick.jpg",
     category: "ICT"
   },
   {
     word: "das Ladegerät",
     plural: "Ladegeräte",
-    image: "images/ladegerät.jpg",
+    image: "Images/ladegerät.jpg",
     category: "ICT"
   },
   {
     word: "der Drucker",
     plural: "Drucker",
-    image: "images/drucker.jpg",
+    image: "Images/drucker.jpg",
     category: "ICT"
   },
   {
     word: "die Taskleiste",
     plural: "Taskleisten",
-    image: "images/taskleiste.jpg",
+    image: "Images/taskleiste.jpg",
     category: "ICT"
   },
   {
     word: "speichern",
     plural: "-",
-    image: "images/speichern.jpg",
+    image: "Images/speichern.jpg",
     category: "ICT"
   }
 
