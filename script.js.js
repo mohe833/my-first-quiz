@@ -1,123 +1,250 @@
-alert("Wenn der Plural und Singular gleich sind, nimm bitte -")
 let user = "";
-
 let score = 0;
-
 let currentIndex = 0;
 
-const wortliste = {
- 
-    "das At-Zeichen": "At-Zeichen",
-    "der Laptop": "Laptops",
-    "der Bildschirm / der Monitor": "Bildschirme / Monitore",
-    "die Tastatur": "Tastaturen",
-    "der Akku ist leer": "-",
-    "der Computer (PC)": "Computer (PCs)",
-    "teams": "-",
-    "der Akku ist voll": "-",
-    "aufladen": "-",
-    "das Word": "-",
-    "das Internet / das Symbol": "- / Symbole",
-    "die Maus": "Mäuse",
-    "die linke Maustaste": "linken Maustasten",
-    "die rechte Maustaste": "rechten Maustasten",
-    "der USB-Stick": "USB-Sticks",
-    "das Ladegerät": "Ladegeräte",
-    "der Drucker": "Drucker",
-    "die Taskleiste": "Taskleisten",
-    "speichern": "-"
-};
+let wrongAnswers = [];
 
-const words = Object.keys(wortliste);
+const wortliste = [
 
-function startQuiz() {
+{
+    word: "At-Zeichen",
+    plural: "At-Zeichen",
+    image: "images/at_zeichen.jpg",
+    category: "ICT"
+  },
+  {
+    word: "der Laptop",
+    plural: "Laptops",
+    
+    image: "images/laptop.jpg",
+    category: "ICT"
+  },
+  {
+    word: "der Bildschirm / der Monitor",
+    plural: "Bildschirme / Monitore",
+    image: "images/bildschirm_monitor.jpg",
+    category: "ICT"
+  },
+  {
+    word: "die Tastatur",
+    plural: "Tastaturen",
+    image: "images/tastatur.jpg",
+    category: "ICT"
+  },
+  {
+    word: "der Akku ist leer",
+    plural: "-",
+    image: "images/akku_leer.jpg",
+    category: "ICT"
+  },
+  {
+    word: "der Computer (PC)",
+    plural: "Computer",
+    image: "images/computer.jpg",
+    category: "ICT"
+  },
+  {
+    word: "teams",
+    plural: "-",
+    image: "images/teams.jpg",
+    category: "ICT"
+  },
+  {
+    word: "der Akku ist voll",
+    plural: "-",
+    image: "images/akku_voll.jpg",
+    category: "ICT"
+  },
+  {
+    word: "aufladen",
+    plural: "-",
+    image: "images/aufladen.jpg",
+    category: "ICT"
+  },
+  {
+    word: "das Word",
+    plural: "-",
+    image: "images/word.jpg",
+    category: "ICT"
+  },
+  {
+    word: "das Internet / das Symbol",
+    plural: "Symbole",
+    image: "images/internet_symbol.jpg",
+    category: "ICT"
+  },
+  {
+    word: "die Maus",
+    plural: "Mäuse",
+    image: "images/maus.jpg",
+    category: "ICT"
+  },
+  {
+    word: "die linke Maustaste",
+    plural: "linken Maustasten",
+    image: "images/linke_maustaste.jpg",
+    category: "ICT"
+  },
+  {
+    word: "die rechte Maustaste",
+    plural: "rechten Maustasten",
+    image: "images/rechte_maustaste.jpg",
+    category: "ICT"
+  },
+  
+  {
+    word: "der USB-Stick",
+    plural: "USB-Sticks",
+    image: "images/usb_stick.jpg",
+    category: "ICT"
+  },
+  {
+    word: "das Ladegerät",
+    plural: "Ladegeräte",
+    image: "images/ladegerät.jpg",
+    category: "ICT"
+  },
+  {
+    word: "der Drucker",
+    plural: "Drucker",
+    image: "images/drucker.jpg",
+    category: "ICT"
+  },
+  {
+    word: "die Taskleiste",
+    plural: "Taskleisten",
+    image: "images/taskleiste.jpg",
+    category: "ICT"
+  },
+  {
+    word: "speichern",
+    plural: "-",
+    image: "images/speichern.jpg",
+    category: "ICT"
+  }
 
-    user = document.getElementById("username").value.trim();
+];
 
-    if (user === "") {
+wortliste.sort(() => Math.random() - 0.5);
 
-        alert("Bitte gib deinen Namen ein!");
+function startQuiz(){
 
-        return;
+user = document.getElementById("username").value.trim();
 
-    }
+if(user === ""){
+alert("Bitte Namen eingeben!");
+return;
+}
 
-    document.getElementById("start-section").style.display = "none";
+document.getElementById("start-section").style.display="none";
+document.getElementById("quiz-section").style.display="block";
 
-    document.getElementById("quiz-section").style.display = "block";
-
-    document.getElementById("score").innerText = `${user}, dein Punktestand: 0 von ${words.length}`;
-
-    showQuestion();
+showQuestion();
 
 }
 
-function showQuestion() {
+function showQuestion(){
 
-    if (currentIndex < words.length) {
+if(currentIndex >= wortliste.length){
+endQuiz();
+return;
+}
 
-        const currentWord = words[currentIndex];
+const current = wortliste[currentIndex];
 
-        document.getElementById("question").innerText = `Was ist der Plural von "${currentWord}"?`;
+document.getElementById("progress").innerText =
+`Frage ${currentIndex+1} von ${wortliste.length}`;
 
-        document.getElementById("answer").value = "";
+document.getElementById("category").innerText =
+`Kategorie: ${current.category}`;
 
-        document.getElementById("feedback").innerText = "";
+document.getElementById("word-image").src =
+current.image;
 
-    } else {
+document.getElementById("question").innerText =
+`Was ist der Plural von "${current.word}"?`;
 
-        endQuiz();
+document.getElementById("answer").value="";
+document.getElementById("feedback").innerText="";
 
-    }
+document.getElementById("score").innerText =
+`${user}: ${score} Punkte`;
 
 }
 
-function checkAnswer() {
+function checkAnswer(){
 
-    const currentWord = words[currentIndex];
+const current = wortliste[currentIndex];
 
-    const correctAnswer = wortliste[currentWord];
+const userAnswer =
+document.getElementById("answer")
+.value
+.trim();
 
-    const userAnswer = document.getElementById("answer").value.trim();
+if(userAnswer.toLowerCase() === current.plural.toLowerCase()){
 
-    if (userAnswer === correctAnswer) {
+score++;
 
-        score++;
+document.getElementById("feedback").innerText =
+"✅ Richtig!";
 
-        document.getElementById("feedback").innerText = `✅ Richtig, ${user}!`;
+document.getElementById("feedback").style.color =
+"green";
 
-        document.getElementById("feedback").style.color = "green";
+}else{
 
-    } else {
+wrongAnswers.push(
+`${current.word} → ${current.plural}`
+);
 
-        document.getElementById("feedback").innerText = `❌ Falsch! Die richtige Antwort ist "${correctAnswer}".`;
+document.getElementById("feedback").innerText =
+`❌ Falsch! Richtige Antwort: ${current.plural}`;
 
-        document.getElementById("feedback").style.color = "red";
+document.getElementById("feedback").style.color =
+"red";
+}
 
-    }
+currentIndex++;
 
-    document.getElementById("score").innerText = `${user}, dein Punktestand: ${score} von ${words.length}`;
-
-    currentIndex++;
-
-    setTimeout(showQuestion, 3000); // waits 3 seconds before next question
+setTimeout(showQuestion,2000);
 
 }
 
-function endQuiz() {
+function endQuiz(){
 
-    document.getElementById("quiz-section").innerHTML = `
-<h2>Quiz beendet!</h2>
-<p>${user}, du hast ${score} von ${words.length} richtig.</p>
-<p>Vielen Dank fürs Spielen! 👏</p>
+let mistakes = "";
 
-    `;
+if(wrongAnswers.length > 0){
 
-}
-document.addEventListener("keydown", function(event) {
- if (event.key === "Enter") {
-   document.getElementById("confirm-btn").click();
- }
+mistakes =
+"<h3>Fehler:</h3><ul>";
+
+wrongAnswers.forEach(item=>{
+mistakes += `<li>${item}</li>`;
 });
 
- 
+mistakes += "</ul>";
+
+}
+
+document.getElementById("quiz-section").innerHTML =
+
+`
+<h2>🎉 Quiz beendet!</h2>
+
+<p>${user}, du hast ${score}
+von ${wortliste.length}
+richtig.</p>
+
+${mistakes}
+`;
+
+}
+
+document.addEventListener("keydown",function(event){
+
+if(event.key==="Enter"){
+document.getElementById("confirm-btn").click();
+}
+
+});
